@@ -1,0 +1,62 @@
+/* tokens.css — CSS Custom Properties base */
+/* Cores e fontes são aplicadas via JS (engine.ts) a partir do config.ts.  */
+/* Trocar borda = mudar data-estilo no <html>. Independente das demais.    */
+
+/* ─── Fallbacks de cor (sobrescritos pelo engine.ts em runtime) ────────── */
+:root {
+  /* Tamanhos — mobile-only */
+  --fs-eyebrow:     13px;
+  --fs-body:        15px;
+  --fs-h3:          18px;
+  --fs-h2-sm:       24px;
+  --fs-h1:          clamp(28px, 8vw, 36px);
+
+  /* Line-heights */
+  --lh-display:     1.15;
+  --lh-body:        1.5;
+  --lh-eyebrow:     1.2;
+
+  /* Espaçamentos — mobile-only */
+  --sp-section:     64px;
+  --sp-inner:       32px;
+  --sp-gap:         16px;
+  --sp-gap-sm:      12px;
+  --sp-gap-xs:      6px;
+  --sp-pad-h:       24px;
+  --sp-card-pad:    24px;
+
+  /* Nav */
+  --nav-height:     60px;
+}
+
+/* ═══════════════════════════════════════════════════════════ */
+/* ─── Estilo de bordas ──────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════ */
+
+/* sharp → 0px (geométrico, editorial) */
+[data-estilo="sharp"] {
+  --r-card:    0px;
+  --r-card-lg: 0px;
+  --r-btn:     0px;
+}
+
+/* soft → 4px / 8px (neutro, profissional) */
+[data-estilo="soft"] {
+  --r-card:    4px;
+  --r-card-lg: 8px;
+  --r-btn:     4px;
+}
+
+/* round → 12px / 16px (amigável, wellness) */
+[data-estilo="round"] {
+  --r-card:    12px;
+  --r-card-lg: 16px;
+  --r-btn:     12px;
+}
+
+/* pill → botões arredondados, cards com 16px */
+[data-estilo="pill"] {
+  --r-card:    16px;
+  --r-card-lg: 20px;
+  --r-btn:     9999px;
+}
