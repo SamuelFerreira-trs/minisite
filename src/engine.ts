@@ -93,6 +93,12 @@ const RENDERERS: Record<string, () => string> = {
 }
 
 export function mount(): void {
+  // 0. Garante que a página comece no topo (evita scroll restoration do navegador)
+  window.scrollTo(0, 0);
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+
   // 1. Aplica cores, fontes e estilo
   applyTheme()
   document.documentElement.setAttribute('data-estilo', CONFIG.estilo)

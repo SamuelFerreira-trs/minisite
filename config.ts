@@ -21,8 +21,8 @@ export const CONFIG = {
     fundoTerciario:  "#1c1c1c",   // Fundo terciário (para seções escuras)
     textoPrimario:   "#0c0c0c",   // Textos Primários
     textoSecundario: "#fefefeff",   // Textos Secundários
-    botaoPrimario:   "#3f9150ff",   // Cor do botão primário
-    botaoSecundario: "#525252ff",   // Cor do botão secundário
+    botaoPrimario:   "#f6b718ff",   // Cor do botão primário
+    botaoSecundario: "#f6b718ff",   // Cor do botão secundário
   },
 
   // ─── Fontes ─────────────────────────────────────────────────
