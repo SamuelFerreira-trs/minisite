@@ -8,9 +8,9 @@ export const CONFIG = {
   // ─── Identidade ────────────────────────────────────────────
   nome:      "Clínica Vitória Rocha",
   slogan:    "Estética & Beleza",
-  logo:      "/logo.png", // Coloque o arquivo em /public/logo.png — null = exibe o nome em texto
+  logo:      "./logo.png", // Coloque o arquivo em /public/logo.png — null = exibe o nome em texto
   whatsapp:  "5585985121230",
-  iconeWhatsapp: "/whatsapp.svg",
+  iconeWhatsapp: "./whatsapp.svg",
   cidade:    "Fortaleza, CE",
   instagram: "@clinicavitoriarocha",
 
@@ -91,10 +91,10 @@ export const CONFIG = {
 
   galeria: {
     imagens: [
-      "/img1.png",
-      "/img2.png",
-      "/img3.png",
-      "/img4.png",
+      "./img1.png",
+      "./img2.png",
+      "./img3.png",
+      "./img4.png",
     ],
     iconeAnterior: "chevron-left",
     iconeProximo: "chevron-right",

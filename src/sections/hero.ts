@@ -17,7 +17,7 @@ export function renderHero(config: HeroConfig, whatsapp: string, nome: string): 
       <div class="reveal">
         <div class="hero-cover">
           <img
-            src="public/hero.png"
+            src="./hero.png"
             alt="${nome}"
             loading="eager"
           />
