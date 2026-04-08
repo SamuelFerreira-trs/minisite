@@ -11,7 +11,7 @@ export function renderGaleria(config: GaleriaConfig, setaEsq: string, setaDir: s
     <section id="galeria" class="section section--surface3">
       <div class="section-header reveal">
         <p class="eyebrow--light">Nosso espaço</p>
-        <h1 class="section-title--light">Um ambiente pensado para você</h2>
+        <h1 class="section-title--light">Um ambiente pensado para a sua evolução</h2>
       </div>
       <div class="galeria-slider reveal" id="galeria-slider">
         <div class="galeria-track" id="galeria-track">

@@ -20,11 +20,9 @@ export function renderFooter(config: SiteConfig): string {
   return `
     <footer class="site-footer">
       <div class="footer-inner">
-        <p class="footer-logo">${config.nome}</p>
-        <nav class="footer-links" aria-label="Links do rodapé">
-          ${links}
-        </nav>
+        <img src="${config.footer.logo_white}" class="footer-logo" alt="${config.nome}">
         <p class="footer-copy">© ${currentYear()} ${config.nome} · ${config.cidade} · Todos os direitos reservados</p>
+        <p class="footer-copy">MiniSite desenvolvido por <a href="https://tersis.co" target="_blank">Tersis</a></p>
       </div>
     </footer>
   `

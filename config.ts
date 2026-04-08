@@ -6,13 +6,13 @@ import type { SiteConfig } from './src/types'
 export const CONFIG = {
 
   // ─── Identidade ────────────────────────────────────────────
-  nome:      "Clínica Vitória Rocha",
-  slogan:    "Estética & Beleza",
+  nome:      "Complexo Queiroga",
+  slogan:    "Saúde & Performance",
   logo:      "./logo.png", // Coloque o arquivo em /public/logo.png — null = exibe o nome em texto
   whatsapp:  "5585985121230",
   iconeWhatsapp: "./whatsapp.svg",
-  cidade:    "Fortaleza, CE",
-  instagram: "@clinicavitoriarocha",
+  cidade:    "São Luís, MA",
+  instagram: "@complexoqueiroga",
 
   // ─── Cores ─────────────────────────────────────────────────
   cores: {
@@ -68,25 +68,41 @@ export const CONFIG = {
   },
 
   sobre: {
-    titulo:    "Especialistas em realçar\nsua beleza natural",
-    texto:     "Fundada em 2016, a Clínica Vitória Rocha nasceu da paixão por transformar vidas através da estética. Nossa equipe é formada por profissionais certificadas e em constante atualização, garantindo os tratamentos mais modernos do mercado.",
+    titulo:    "Somos uma academia de alto padrão localizada em São Luís, Maranhão",
+    texto:     "O Complexo Queiroga é a primeira academia all-inclusive de São Luís, pensada para quem busca excelência, método e evolução real com ciência e propósito.",
     tag:       "Desde 2016",
-    iconeDiferencial: "star",
+    iconeDiferencial: "badge-check",
     diferenciais: [
-      { titulo: "Profissionais certificadas", desc: "Equipe com formação e cursos internacionais" },
-      { titulo: "Produtos premium",           desc: "Marcas selecionadas com resultados comprovados" },
-      { titulo: "Ambiente aconchegante",      desc: "Espaço projetado para seu conforto e relaxamento" },
-      { titulo: "Resultados reais",           desc: "Protocolos personalizados para cada cliente" },
+      { titulo: "Profissionais qualificados", 
+        desc: "Equipe com formação e cursos internacionais" },
+
+      { titulo: "Equipamentos premium",           
+        desc: "Equipamentos de última geração" },
+
+      { titulo: "Ambiente para evoluir seu networking",      
+        desc: "Espaço projetado para seu atingir seus objetivos" },
+
+      { titulo: "Resultados reais",          
+        desc: "Protocolos personalizados para cada cliente" },
     ],
   },
 
   servicos: [
-    { nome: "Limpeza de pele profunda",  desc: "Tratamento completo para pele radiante e purificada, com análise cutânea personalizada.",            preco: "A partir de R$ 180" },
-    { nome: "Radiofrequência facial",    desc: "Firmeza e rejuvenescimento com tecnologia de ponta. Resultados visíveis desde a 1ª sessão.",          preco: "A partir de R$ 250" },
-    { nome: "Design de sobrancelhas",    desc: "Mapeamento facial e técnicas exclusivas para o design perfeito para o seu rosto.",                    preco: "A partir de R$ 90"  },
-    { nome: "Massagem relaxante",        desc: "1 hora de relaxamento profundo com óleos essenciais e técnicas terapêuticas.",                        preco: "A partir de R$ 150" },
-    { nome: "Peeling químico",           desc: "Renovação celular controlada para manchas, acne e textura irregular.",                                preco: "A partir de R$ 200" },
-    { nome: "Drenagem linfática",        desc: "Técnica manual certificada para redução de inchaço e bem-estar geral.",                               preco: "A partir de R$ 130" },
+    { nome: "Protocolo 180º",  
+      desc: "Para pessoas que buscam resultados reais e duradouros",            
+      preco: "R$ 1080/mês" },
+
+    { nome: "Protocolo 180º PRO",    
+      desc: "Para pessoas que buscam resultados reais e duradouros",          
+      preco: "R$ 1280/mês" },
+
+    { nome: "Protocolo 360º",    
+      desc: "Para pessoas que buscam resultados reais e duradouros",                    
+      preco: "R$ 1480/mês"  },
+
+    { nome: "Protocolo 360º PRO",        
+      desc: "Para pessoas que buscam resultados reais e duradouros",                        
+      preco: "R$ 1680/mês" },
   ],
 
   galeria: {
@@ -111,13 +127,13 @@ export const CONFIG = {
 
   localizacao: {
     iconeEndereco: "map-pin",
-    endereco:   "Rua das Flores, 142 — Meireles",
-    cidade:     "Fortaleza, CE — 60165-080",
+    endereco:   "Av. dos Holandeses, 1000 — Quadra 01, Lote 01 — Calhau",
+    cidade:     "São Luís, MA",
     iconeTelefone: "phone",
-    telefone:   "(85) 9 8512-1230",
+    telefone:   "(98) 9 8512-1230",
     iconeEmail: "mail",
-    email:      "contato@clinicavitoriarocha.com.br",
-    maps_query: "Clínica+Vitória+Rocha+Fortaleza",
+    email:      "complexoqueiroga@gmail.com",
+    maps_query: "Complexo+Queiroga",
     horarios: [
       { dia: "Segunda a Sexta", hora: "08h às 19h" },
       { dia: "Sábado",          hora: "08h às 14h" },
@@ -131,4 +147,7 @@ export const CONFIG = {
     iconeWhatsapp: "message-circle"
   },
 
+  footer: {
+    logo_white: "./logo_white.png",
+  }
 } satisfies SiteConfig
