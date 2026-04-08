@@ -3,7 +3,7 @@ import type { SiteConfig } from '../types'
 import { wppLink } from '../utils'
 
 export function renderNav(config: SiteConfig): string {
-  const cta = wppLink(config.whatsapp, `Olá! Gostaria de agendar uma consulta na ${config.nome}.`)
+  const cta = wppLink(config.whatsapp, `Olá! Gostaria de ser Membership.`)
 
   const logoContent = config.logo
     ? `<img src="${config.logo}" alt="${config.nome}" class="nav-logo-img">`

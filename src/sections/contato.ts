@@ -3,7 +3,7 @@ import type { ContatoConfig } from '../types'
 import { wppLink } from '../utils'
 
 export function renderContato(config: ContatoConfig, whatsapp: string, nome: string, iconeWhatsapp: string): string {
-  const cta = wppLink(whatsapp, `Olá! Gostaria de agendar uma consulta na ${nome}.`)
+  const cta = wppLink(whatsapp, `Olá! Gostaria de ser Membership.`)
 
   return `
     <section id="contato" class="section section--surface2">

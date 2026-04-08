@@ -3,7 +3,7 @@ import type { HeroConfig } from '../types'
 import { wppLink, nl2br } from '../utils'
 
 export function renderHero(config: HeroConfig, whatsapp: string, nome: string): string {
-  const cta = wppLink(whatsapp, `Olá! Gostaria de agendar uma consulta gratuita.`)
+  const cta = wppLink(whatsapp, `Olá! Quero ser Membership.`)
 
   const stats = config.stats.map(s => `
     <div class="stat">

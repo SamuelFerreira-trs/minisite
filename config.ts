@@ -9,7 +9,7 @@ export const CONFIG = {
   nome:      "Complexo Queiroga",
   slogan:    "Saúde & Performance",
   logo:      "./logo.png", // Coloque o arquivo em /public/logo.png — null = exibe o nome em texto
-  whatsapp:  "5585985121230",
+  whatsapp:  "5598981115033",
   iconeWhatsapp: "./whatsapp.svg",
   cidade:    "São Luís, MA",
   instagram: "@complexoqueiroga",
