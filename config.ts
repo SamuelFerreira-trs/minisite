@@ -21,7 +21,7 @@ export const CONFIG = {
     fundoTerciario:  "#1c1c1c",   // Fundo terciário (para seções escuras)
     textoPrimario:   "#0c0c0c",   // Textos Primários
     textoSecundario: "#fefefeff",   // Textos Secundários
-    botaoPrimario:   "#f6b718ff",   // Cor do botão primário
+    botaoPrimario:   "#88c780ff",   // Cor do botão primário
     botaoSecundario: "#f6b718ff",   // Cor do botão secundário
   },
 
@@ -88,19 +88,23 @@ export const CONFIG = {
   },
 
   servicos: [
-    { nome: "Protocolo 180º",  
+    { images: ["./img1.png"],
+      nome: "Protocolo 180º",  
       desc: "Para pessoas que buscam resultados reais e duradouros",            
       preco: "R$ 1080/mês" },
 
-    { nome: "Protocolo 180º PRO",    
+    { images: ["./img2.png"],
+      nome: "Protocolo 180º PRO",    
       desc: "Para pessoas que buscam resultados reais e duradouros",          
       preco: "R$ 1280/mês" },
 
-    { nome: "Protocolo 360º",    
+    { images: ["./img3.png"],
+      nome: "Protocolo 360º",    
       desc: "Para pessoas que buscam resultados reais e duradouros",                    
       preco: "R$ 1480/mês"  },
 
-    { nome: "Protocolo 360º PRO",        
+    { images: ["./img4.png"],
+      nome: "Protocolo 360º PRO",        
       desc: "Para pessoas que buscam resultados reais e duradouros",                        
       preco: "R$ 1680/mês" },
   ],

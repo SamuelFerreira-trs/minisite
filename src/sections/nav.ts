@@ -14,7 +14,7 @@ export function renderNav(config: SiteConfig): string {
       <a href="#hero" class="nav-logo" aria-label="${config.nome}">${logoContent}</a>
       <a href="${cta}" class="nav-cta" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
         <img src="${config.iconeWhatsapp}" alt="WhatsApp" class="nav-cta-icon">
-        Enviar mensagem 
+        Contato 
       </a>
     </nav>
   `

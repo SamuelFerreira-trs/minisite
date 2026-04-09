@@ -13,11 +13,10 @@ body {
 .site-nav {
   margin-top: 12px;
   position: fixed;
-  top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
-  max-width: 480px;
+  width: calc(100% - 24px);
+  max-width: calc(480px - 24px);
   z-index: 100;
   height: var(--nav-height);
   background-color: var(--c-bg);
@@ -42,7 +41,7 @@ body {
 
 .nav-logo-img {
   height: 32px;
-  width: 70%;
+  width: 80%;
   display: block;
   object-fit: contain;
 }
@@ -173,8 +172,8 @@ body {
 /* ─── Seção padrão ────────────────────────────────────────── */
 .section {
   padding: 48px 24px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
   border-radius: var(--r-card);
 }
 
@@ -311,15 +310,22 @@ body {
   background-color: var(--c-bg);
   border: 1px solid var(--c-border);
   border-radius: var(--r-card);
-  padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 8px;
+}
+
+.card-servico__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
 }
 
 .card-servico__num {
   font-family: var(--f-display);
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 500;
   color: var(--c-text);
   line-height: 1.15;
@@ -327,7 +333,7 @@ body {
 
 .card-servico__nome {
   font-family: var(--f-display);
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 500;
   color: var(--c-text);
   line-height: 1.15;
@@ -338,7 +344,7 @@ body {
   font-size: 15px;
   color: var(--c-text-sub);
   line-height: 1.4;
-  margin-top: 6px;
+  margin-top: 8px;
 }
 
 .card-servico__divider {
@@ -352,6 +358,21 @@ body {
   font-weight: 700;
   color: var(--c-text-sub);
   line-height: 1.2;
+}
+
+.card-servico__image {
+  border-radius: 8px;
+  padding: 8px
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-servico__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* ─── Depoimentos — coluna única ──────────────────────────── */
@@ -564,8 +585,8 @@ body {
 .site-footer {
   background-color: var(--c-dark2);
   padding: 32px 24px;
-  border-radius: var(--r-card);
-  margin-bottom: 20px;
+  border-radius: 16px 16px 0 0;
+  margin-bottom: 0px;
 }
 
 .footer-inner {

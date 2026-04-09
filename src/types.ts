@@ -74,6 +74,7 @@ export interface DiferencialItem {
 }
 
 export interface ServicoItem {
+  images: string[] // Array de imagens
   nome:  string
   desc:  string
   preco: string
