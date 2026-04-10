@@ -5,7 +5,7 @@ export function renderServicos(servicos: ServicoItem[]): string {
   const cards = servicos.map((s, i) => `
     <div class="card-servico reveal" style="transition-delay: ${i * 60}ms;">
       <div class="card-servico__image">
-        <img src="${s.images[0]}" alt="${s.nome}">
+        <img id="image" src="${s.images[0]}" alt="${s.nome}">
       </div>
       <div class="card-servico__content">
         <div>

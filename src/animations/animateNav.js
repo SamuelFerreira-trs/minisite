@@ -10,10 +10,8 @@ export function animateNav() {
 
   // 1. Nav expande do centro
   gsap.from(nav, {
-    width: 120,           // largura inicial pequena
+    width: 5,           // largura inicial pequena
     borderRadius: '999px', // começa como pílula
-    paddingLeft: 16,
-    paddingRight: 16,
     duration: 0.8,
     ease: 'expo.inOut',
   });

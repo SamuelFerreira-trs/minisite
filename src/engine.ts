@@ -13,6 +13,7 @@ import { renderWppFloat }    from './sections/wpp'
 import { animateHeroTitle } from './animations/textAnimations'
 import { initScrollSmoother } from './animations/scrollSmoother'
 import { animateNav } from './animations/animateNav'
+import { animateImage } from './animations/animeteImage'
 
 function applyTheme(): void {
   const { fundoPrincipal, fundoSecundario, fundoTerciario, textoPrimario, textoSecundario, botaoPrimario, botaoSecundario } = CONFIG.cores
@@ -135,12 +136,14 @@ export function mount(): void {
   animateHeroTitle()
   initScrollSmoother()
   animateNav()
+  animateImage()
   
   // 9. Inicializa ícones do lucide
   import('lucide').then(({ createIcons, icons }) => {
     createIcons({ icons })
   })
 }
+
 
 function initReveal(): void {
   const observer = new IntersectionObserver(
