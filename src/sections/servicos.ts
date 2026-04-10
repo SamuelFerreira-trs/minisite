@@ -7,8 +7,7 @@ export function renderServicos(servicos: ServicoItem[]): string {
       <div class="card-servico__image">
         <img src="${s.images[0]}" alt="${s.nome}">
       </div>
-      <div class="card-servico__content">   
-        <p class="card-servico__num">${String(i + 1).padStart(2, '0')}</p>
+      <div class="card-servico__content">
         <div>
           <p class="card-servico__nome">${s.nome}</p>
           <p class="card-servico__desc">${s.desc}</p>

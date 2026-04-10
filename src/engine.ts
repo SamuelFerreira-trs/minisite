@@ -10,6 +10,9 @@ import { renderLocalizacao } from './sections/localizacao'
 import { renderContato }     from './sections/contato'
 import { renderFooter }      from './sections/footer'
 import { renderWppFloat }    from './sections/wpp'
+import { animateHeroTitle } from './animations/textAnimations'
+import { initScrollSmoother } from './animations/scrollSmoother'
+import { animateNav } from './animations/animateNav'
 
 function applyTheme(): void {
   const { fundoPrincipal, fundoSecundario, fundoTerciario, textoPrimario, textoSecundario, botaoPrimario, botaoSecundario } = CONFIG.cores
@@ -129,6 +132,9 @@ export function mount(): void {
   // 8. Comportamentos interativos
   initReveal()
   initGaleria()
+  animateHeroTitle()
+  initScrollSmoother()
+  animateNav()
   
   // 9. Inicializa ícones do lucide
   import('lucide').then(({ createIcons, icons }) => {

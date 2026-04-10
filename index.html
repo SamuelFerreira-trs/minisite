@@ -28,11 +28,14 @@
   <link rel="stylesheet" href="/src/styles/components.css">
 </head>
 <body>
-  <nav id="nav" aria-label="Navegação principal"></nav>
-  <main id="main"></main>
-  <footer id="footer"></footer>
-  <div id="wpp-float" aria-label="Botão WhatsApp"></div>
-
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <nav id="nav" aria-label="Navegação principal"></nav>
+      <main id="main"></main>
+      <footer id="footer"></footer>
+      <div id="wpp-float" aria-label="Botão WhatsApp"></div>
+    </div>
+  </div>
   <script type="module">
     import { mount } from '/src/engine.ts'
     mount()
